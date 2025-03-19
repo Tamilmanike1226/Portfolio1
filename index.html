@@ -25,7 +25,7 @@
         /* Add styles for the round profile picture */
         .profile-picture {
             width: 150px; /* Adjust the size as needed */
-            height: 150px;
+            height: 200px;
             border-radius: 55%; /* Create a circular shape */
             object-fit: cover; /* To ensure the image fills the circular area */
             position: absolute; /* Add this */
@@ -95,8 +95,8 @@
     <header>
         <div class="header-content">
             <!-- Add your profile picture here -->
-            <img src="./IMG_20250225_164557_723.jpg" class="profile-picture">
-            <h1>TAMILMANI K E</h1>
+            <img src="content://com.android.externalstorage.documents/document/primary%3Aportfolio%2Fjaya123.jpg"class="profile-picture ">
+            <h1>Jayaragavan S</h1>
             <p>Web-developer</p>
         </div>
     </header>
@@ -115,7 +115,7 @@
     <section id="about">
         <div class="section-content">
             <h2>About Me</h2>
-            <p><b><a href="https://techtrainer20.github.io/git_con2/" traget="_target"></a> I'm Tamilmani, a passionate web developer with 1 year of experience in building and optimizing websites and web applications. I specialize in creating responsive, user-friendly, and visually appealing web solutions.</p>
+            <p><b><a href="https://techtrainer20.github.io/git_con2/" traget="_target"></a> I'm Jayaragavan S, a passionate web developer with 1 year of experience in building and optimizing websites and web applications. I specialize in creating responsive, user-friendly, and visually appealing web solutions.</p>
         </div>
     </section>
 
@@ -163,14 +163,55 @@
         <div class="section-content">
             <center>
             <h2>Resume</h2>
-            <a href ="./r.pdf" target="_blank" class="download-button">Download CV</a>
+            <a href="r.pdf"download-button">Download CV</a>
         </center>
+        </div>
+            
+       
         </div>
         
     </section>
 
+    
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+             <section id="resume">
+    
+        <div class="section-content">
+            <center>
+            <h2>Tnsdc fedwc certificate</h2>
+            <a href="TAMILMANI _ SkillsBuild .pdf">Download Certificate</a>
+        </center>
+        </div>
+            
+       
+        </div>
+        <footer>
+        <p>&copy; 2024 Jayaragavan S</p>
+    </footer>
+    
+        
+    </section>
+
     <footer>
-        <p>&copy; 2025 TAMILMANI K E</p>
+        <p></p>
     </footer>
 
     <script>
@@ -191,5 +232,7 @@
             });
         });
     </script>
+               
+    
 </body>
 </html>
